@@ -4,10 +4,9 @@ footer{
     }
     background-color: rgba(8, 8, 8, 0.7);
     p {
-        font-family: 'Shrikhand', cursive;
+        @extend h1; //'Shrikhand' font, in _typography
     }
     a {
         display: flex;
     }
-
 }
