@@ -1,3 +1,26 @@
+body {
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  background-color: rgba(8, 8, 8, 0.7);
+}
+footer * {
+  color: white;
+}
+footer p {
+  font-family: "Shrikhand", cursive;
+}
+footer a {
+  display: flex;
+}
 
 /*# sourceMappingURL=style.css.map */
