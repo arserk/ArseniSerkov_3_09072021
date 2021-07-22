@@ -1,19 +1,9 @@
 /*image layout, on homepage*/
-.image-crop { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 200px;
-    img {
-        max-width: 100%;
-        position: relative;
-        bottom: 30px;
-    }
-}
+
+    
 
 form { 
-    @include dark-background(white, 10%);
+    background-color: darken(white, 10%);
     justify-content: center;
     align-items: center;
     color: lighten(black, 30%);
@@ -34,14 +24,16 @@ form {
     }
 }
 
-.home1 {
+/*description, top of page*/
+section.home1 { 
     text-align: center;
     p {
         color: lighten(black, 40%);
     }
 }
 
-.home2 {
+/*"Fonctionnement" section*/
+section.home2 {
     .cell {
         background-color: darken(white, 5%);
         height: 4em;
@@ -62,8 +54,20 @@ form {
     }
 }
 
-.home3 {
+/*"Restaurants" section*/
+section.home3 {
     .cell {
         flex-direction: column;
+        @include child-on-left(4);
+            .image-crop{
+                margin-bottom: 5px;
+                height: 200px;
+            }
+            img {
+                height: auto;
+                position: relative;
+                bottom: 30px;
+                max-width: 100%;
+            }
     }
 }
