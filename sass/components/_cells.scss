@@ -3,10 +3,9 @@
     margin-bottom: 20px;
     display: flex;
     background-color: white;
-    @include box-shadow($color-background, 20%);
+    @include box-shadow(20%);
     &--rounded {
         border-radius: 20px;
-        overflow: hidden;
     }
     strong, p {
         margin: 5px 0 0 10px;
@@ -21,4 +20,5 @@
         color: darken($color-tertiary, 35%);
         background-color: $color-tertiary;
     }
+    @include scale-up;
 }

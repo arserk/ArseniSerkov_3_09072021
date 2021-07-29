@@ -14,12 +14,15 @@
 </head>
 
 <body>
+    <div class="load-container flex-block">
+        <div class="spinner"></div>
+    </div>
     <header>
         <img src="images/logo/ohmyfood.png" alt="Logo Ohmyfood!" />
     </header>
     <form method="post" class="flex-block">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="search" name="city" id="search_restaurant" placeholder="Paris, Belleville" />
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="search" name="city" id="search_restaurant" placeholder="Paris, Belleville" />
     </form>
     <section class="section section--darker-bg home1">
         <h2>Réservez le menu qui vous convient</h2>
@@ -29,16 +32,19 @@
     <section class="section home2">
         <h2>Fonctionnement</h2>
         <div class="cell cell--rounded">
+            <div class="circle">1</div>
             <i class="fas fa-mobile-alt"></i>
-            <span>Choisissez un restaurant</span>
+            <strong>Choisissez un restaurant</strong>
         </div>
         <div class="cell cell--rounded">
+            <div class="circle">2</div>
             <i class="fas fa-list-ul"></i>
-            <span>Composez votre menu</span>
+            <strong>Composez votre menu</strong>
         </div>
         <div class="cell cell--rounded">
+            <div class="circle">3</div>
             <i class="fas fa-store"></i>
-            <span>Dégustez au restaurant</span>
+            <strong>Dégustez au restaurant</strong>
         </div>
     </section>
     <section class="section section--darker-bg home3">

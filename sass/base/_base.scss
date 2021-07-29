@@ -12,10 +12,6 @@ a {
     }
 }
 
-h1 {
-    margin-left: $margin;
-}
-
 .flex-block {
     display: flex;
     &--column {
@@ -28,4 +24,11 @@ h1 {
     &--darker-bg {
         background-color: darken($color-background, 3%);
     }
+}
+
+.image-crop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }

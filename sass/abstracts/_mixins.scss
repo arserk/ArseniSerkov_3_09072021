@@ -1,5 +1,5 @@
-@mixin box-shadow($color, $percent) {
-    box-shadow: 5px 5px 10px darken($color, $percent);
+@mixin box-shadow($percent) {
+    box-shadow: 5px 5px 10px darken($color-background, $percent);
 }
 
 @mixin child-on-left($child) {
@@ -9,4 +9,16 @@
         right: $margin + 1%;
         top: -2rem;
     } 
+}
+
+@mixin scale-down {
+    &:hover {
+        transform: scale(0.99);
+    }
+}
+
+@mixin scale-up {
+    &:hover {
+        transform: scale(1.01);
+    }
 }

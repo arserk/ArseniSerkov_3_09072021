@@ -1,7 +1,3 @@
-/*image layout, on homepage*/
-
-    
-
 form { 
     background-color: darken(white, 10%);
     justify-content: center;
@@ -35,18 +31,48 @@ section.home1 {
 /*"Fonctionnement" section*/
 section.home2 {
     .cell {
+        position: relative;
+        margin-left: 10px;
         background-color: darken(white, 5%);
         height: 4em;
         align-items: center;
-        font-weight: bold;
+        z-index: 1;
         i {
-            color: darkgray;
+            margin: 20px;
+            margin-left: 30px;
+            color: lighten(black, 50%);
         }
-        i , span {
-            margin:20px;
+        strong {
+            margin-bottom: 5px;
+        }
+        .circle {
+            color: white;
+            background-color: $color-primary;
+            font-size: small;
+            border-radius: 50%;
+            text-align: center;
+            width: 1em;
+            height: 1em;
+            padding: 4px;
+            position: absolute;
+            left: -10px;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: lighten($color-primary, 33%);
+            opacity: 0;
+            z-index: -1;
+            border-radius: 20px;
         }
         &:hover {
-            background-color: lighten($color-primary, 33%);
+            &::after {
+                opacity: 1;
+            }
             i {
                 color: $color-primary;
             }
@@ -54,20 +80,20 @@ section.home2 {
     }
 }
 
-/*"Restaurants" section*/
 section.home3 {
     .cell {
         flex-direction: column;
+        overflow: hidden;
         @include child-on-left(4);
-            .image-crop{
-                margin-bottom: 5px;
-                height: 200px;
-            }
-            img {
-                height: auto;
-                position: relative;
-                bottom: 30px;
-                max-width: 100%;
-            }
+        .image-crop{
+            margin-bottom: 5px;
+            height: 200px;
+        }
+        img {
+            height: auto;
+            position: relative;
+            bottom: 30px;
+            max-width: 100%;
+        }
     }
 }

@@ -9,6 +9,14 @@ header {
     a {
         position: absolute;
         left: 5%;
-        top: 1.75em;
+        top: 1.8em;
+        
+    }
+    i {
+        color: lighten(black, 30%);
+        &:hover {
+            color: $color-primary;
+            transform: scale(1.1);
+        }
     }
 }
