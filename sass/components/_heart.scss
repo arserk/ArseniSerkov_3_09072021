@@ -1,4 +1,4 @@
-
+/*
 .heart {
     .fas {
         color: transparent;
@@ -14,13 +14,13 @@
         color: $color-primary;
     }
 }
-
+*/
 .fa-heart {
     font-size: x-large;
     transform: scale(1, 1.1);
 }
 
-/*
+
 .heart {
     position: relative;
     overflow: hidden;
@@ -50,4 +50,3 @@
         transform: translateY(0);
     }
 }
-*/
