@@ -2,6 +2,7 @@
     box-shadow: 5px 5px 10px darken($color-background, $percent);
 }
 
+//to place the "child element" out of document flow, on the right
 @mixin child-on-right($child, $height) {
     :nth-child(#{$child}) {
         position: absolute;

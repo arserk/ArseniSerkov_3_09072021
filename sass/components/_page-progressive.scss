@@ -13,6 +13,7 @@ section.menu2 .cell{
     }
 }
 
+/*slide and fade-in effect for the items in the menu pages*/
 @keyframes progressive-cells {
     from {
         transform: translateY(20px);
@@ -24,6 +25,7 @@ section.menu2 .cell{
     }
 }
 
+/*fade-in of the contents of a menu page*/
 @keyframes progressive-box {
     from {
         opacity: 0;
